@@ -1,0 +1,38 @@
+{
+  "name": "localz",
+  "version": "1.0.0",
+  "description": "Application that track driver locations as they deliver parcels.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest --testTimeout=10000 --forceExit"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lbrulet/DriverApp.git"
+  },
+  "author": "Luc Brulet",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lbrulet/DriverApp/issues"
+  },
+  "homepage": "https://github.com/lbrulet/DriverApp#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mockgoose": "^8.0.4",
+    "mongoose": "^5.7.9",
+    "mongoose-findorcreate": "^3.0.0",
+    "mongoose-float": "^1.0.4"
+  },
+  "devDependencies": {
+    "jest": "^24.9.0",
+    "supertest": "^4.0.2"
+  }
+}
